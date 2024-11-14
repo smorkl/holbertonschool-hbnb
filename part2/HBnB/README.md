@@ -20,7 +20,7 @@ Data is stored in a database using **SQLAlchemy**, which supports CRUD operation
 
 1. Clone the repository:
     ```bash
-    git clone <REPOSITORY_URL>
+    git clone git@github.com:smorkl/holbertonschool-hbnb.git
     cd hbnb
     ```
 
@@ -87,10 +87,9 @@ hbnb/
 
 All specific requirements are listed in `requirements.txt`. Install them by running `pip install -r requirements.txt`.
 
-## Authors
+## Author
 
-- [Author 1 Name](https://github.com/author1)
-- [Author 2 Name](https://github.com/author2)
+- [Author sebastian meneses salazar]
 
 ---
 
