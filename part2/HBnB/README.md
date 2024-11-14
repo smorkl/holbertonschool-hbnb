@@ -21,7 +21,8 @@ Data is stored in a database using **SQLAlchemy**, which supports CRUD operation
 1. Clone the repository:
     ```bash
     git clone git@github.com:smorkl/holbertonschool-hbnb.git
-    cd hbnb
+    cd part2
+    cd HBnB
     ```
 
 2. Install the dependencies:
