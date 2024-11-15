@@ -32,6 +32,28 @@ Data is stored in a database using **SQLAlchemy**, which supports CRUD operation
 
 3. Configure your database environment variables (if applicable) in the `config.py` file.
 
+## Entities
+- **User**: Represents a platform user.
+- **Responsibilities**: Create and manage users, handle authentication information.
+- **Example Methods**:
+- `User.get_user_by_email(email)`: Retrieves a user by their email address.
+
+- **Place**: Represents a property or accommodation available on the platform.
+- **Responsibilities**: Define key information about the property, such as location, price, and amenities.
+- **Example Methods**:
+- `Place.add(place_data)`: Adds a new place to the database.
+- `Place.get(place_id)`: Retrieves a place by its ID.
+
+- **Review**: Represents a review made by a user about a place.
+- **Responsibilities**: Allow users to leave comments and rate places.
+- **Example Methods**:
+- `Review.add(review_data)`: Adds a new review to a specific place.
+
+- **Amenity**: Represents a service or feature that a place can offer.
+- **Responsibilities**: Describe the services available at a place.
+- **Example Methods**:
+- `Amenity.add(amenity_data)`: Adds a new amenity to the database.
+
 ## Usage
 
 To run the project, open a terminal and execute the following command:
