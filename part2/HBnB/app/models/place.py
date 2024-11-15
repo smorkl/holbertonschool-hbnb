@@ -10,16 +10,18 @@ if TYPE_CHECKING == True:
 
 
 class Place(BaseModel, db.Model):
+    #tables for baseadata
     title = db.Column(db.String(50), nullable=False)
     description = db.Column(db.String(500), nullable=True)
     price = db.Column(db.Float, nullable=False)
     latitude = db.Column(db.Float, nullable=False)
     longitude = db.Column(db.Float, nullable=False)
 
+    #Foreign Union 
     owner_id = db.Column(
         db.String(36), db.ForeignKey("user.id"), nullable=False
     )
-
+    #class relation 
     owner = db.relationship("User", back_populates="places")
     reviews = db.relationship("Review", back_populates="place")
 
